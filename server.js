@@ -66,7 +66,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
-
+app.get('/',(req,res)=>{
+  res.send('Vercel backend app creation')
+})
 
 app.post('/addbrand', async (req, res) => {
   try {
